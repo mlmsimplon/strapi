@@ -1,0 +1,83 @@
+{
+  "connection": "default",
+  "collectionName": "competences",
+  "info": {
+    "name": "competences"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "intitule": {
+      "type": "string"
+    },
+    "groupe": {
+      "type": "enumeration",
+      "enum": [
+        "Metiers",
+        "Technologiques"
+      ]
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "FrontEnd",
+        "BackEnd",
+        "Autre"
+      ]
+    },
+    "comprendre": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "dupliquer": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "analyser": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "evaluer": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "concevoir": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "inventer": {
+      "type": "enumeration",
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "apprenant": {
+      "via": "competences",
+      "model": "apprenants"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "connection": "default",
+  "collectionName": "apprenants",
+  "info": {
+    "name": "Apprenants"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "email"
+    },
+    "avatar": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "sexe": {
+      "type": "enumeration",
+      "enum": [
+        "H",
+        "F"
+      ]
+    },
+    "competences_humaines": {
+      "collection": "competences-humaines",
+      "via": "apprenants",
+      "dominant": true
+    },
+    "competences": {
+      "collection": "competences",
+      "via": "apprenant"
+    }
+  }
+}

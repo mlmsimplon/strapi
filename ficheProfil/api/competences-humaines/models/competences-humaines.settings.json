@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "competences_humaines",
+  "info": {
+    "name": "competencesHumaines"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "intitule": {
+      "type": "string"
+    },
+    "acquis": {
+      "type": "boolean"
+    },
+    "apprenants": {
+      "via": "competences_humaines",
+      "collection": "apprenants"
+    }
+  }
+}

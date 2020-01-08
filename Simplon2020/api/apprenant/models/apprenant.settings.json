@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "apprenants",
+  "info": {
+    "name": "apprenant"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "sexe": {
+      "type": "boolean"
+    },
+    "datenaissance": {
+      "type": "date"
+    },
+    "avatar": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "formation": {
+      "model": "formation"
+    },
+    "mail": {
+      "type": "email"
+    }
+  }
+}

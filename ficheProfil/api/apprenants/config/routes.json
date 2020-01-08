@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/apprenants",
+      "handler": "apprenants.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apprenants/count",
+      "handler": "apprenants.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/apprenants/:id",
+      "handler": "apprenants.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/apprenants",
+      "handler": "apprenants.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/apprenants/:id",
+      "handler": "apprenants.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/apprenants/:id",
+      "handler": "apprenants.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

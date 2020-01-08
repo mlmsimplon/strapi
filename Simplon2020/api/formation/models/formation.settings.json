@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "formations",
+  "info": {
+    "name": "formation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "annee": {
+      "type": "date"
+    },
+    "apprenants": {
+      "type": "decimal"
+    },
+    "intitule": {
+      "type": "string"
+    }
+  }
+}
